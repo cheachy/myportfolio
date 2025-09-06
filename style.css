@@ -305,16 +305,14 @@ footer {
     margin-bottom: 10px; 
 }
 
-/* Make images and cards responsive */
 img, video {
   max-width: 100%;
   height: auto;
 }
 
-/* Contacts box adapts on small screens */
 .contacts {
   width: 100%;
-  max-width: 400px; /* keep a max but allow shrinking */
+  max-width: 400px;
   margin: 0 auto var(--space-2);
 }
 
@@ -358,7 +356,7 @@ img, video {
   }
   .pf-nav {
     flex-wrap: wrap;
-    gap: 0.5rem;
-    font-size: 14px;
+    gap: 0.2rem;
+    font-size: 12px;
   }
 }
