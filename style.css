@@ -305,17 +305,60 @@ footer {
     margin-bottom: 10px; 
 }
 
-@media (max-width: 900px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-    }
-    .cards {
-        grid-template-columns: 1fr 1fr;
-    }
+/* Make images and cards responsive */
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 
-@media (max-width: 560px){
-    .cards {
-        grid-template-columns: 1fr;
-    }
+/* Contacts box adapts on small screens */
+.contacts {
+  width: 100%;
+  max-width: 400px; /* keep a max but allow shrinking */
+  margin: 0 auto var(--space-2);
+}
+
+#proj1, #proj2 {
+  width: 100%;
+  max-width: 550px;
+}
+
+#portrait {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50px;
+}
+
+#intro-title2 {
+  font-size: clamp(28px, 5vw, 50px);
+}
+
+#intro-title3 {
+  font-size: clamp(18px, 4vw, 25px);
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card-body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .pf-nav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 14px;
+  }
 }
