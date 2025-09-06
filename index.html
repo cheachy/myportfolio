@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="code logo.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <!-- <a class="skip-link" href="#content">Skip to content</a> -->
+    <header id="header">
+        <div class="my-pf">
+            <img src="assets\code logo.png" class="logo-img" alt="codelogo">
+            <h1 class="logo">
+                <a href="#content" class="logo-link">CHARMIE RAFOLS</a>
+            </h1>
+        </div>
+        <nav aria-label="pf-primary">
+            <ul class="pf-nav">
+                <li><a href="#content">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main id="content">
+        <section class="hero" aria-labelledby="intro-title">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <h4 id="intro-title1">Hey, my name is</h4>
+                        <h1 id="intro-title2">Charmie Rafols</h1>
+                        <h1 id="intro-title3">I build things.</h1>
+                        <p class="intro-pg">
+                            I am a future Full Stack Developer from PH. This is my ITE 18 portfolio for the 1st Semester.
+                        </p>
+                        <a class="btn" href="#projects">Here are my projects</a>
+                    </div>
+                    <figure class="pfp">
+                        <img src="assets\profile.jpg" id="portrait" alt="Portrait of Charmie Rafols">
+                        <figcaption id="fcaption">Based in Butuan City, Philippines</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container"> 
+                <h2 id="about-title">About</h2>
+                <p class="about-pg">
+                    Here are some things about me.
+                </p>
+                <div class="education">
+                <h3>Education</h3>
+                <p>
+                    Currently studying at <strong>Caraga State University - Main Campus</strong>, 3rd Year IT Student.
+                    I am also an ongoing DOST-SEI Scholar for 2 years.
+                </p>
+                </div>
+                <div class="hobbies">
+                <h3>Hobbies</h3>
+                <ul class="hobby-list">
+                    <li>Gaming</li>
+                    <li>Listening to music</li>
+                    <li>Watching sports</li>
+                    <li>Learning about deep things</li>
+                    <li>Reading</li>
+                    <li>Learning an instrument</li>
+                    <li>Consuming fictional materials</li>
+                </ul>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title">Projects</h2>
+                <div class="cards">
+                    <article class="card">
+                        <img src="assets\Project 1.png" alt="Project 1 Screenshot" id="proj1">
+                        <div class="card-body">
+                            <h3>Client-Server Application with Laravel and PostgreSQL</h3>
+                            <p class="project1-pg">A simple web application project to view student information based on Laravel with a PostgreSQL database.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="assets\Project 2.png" alt="Project 2 Screenshot" id="proj2">
+                        <div class="card-body">
+                            <h3>Book Tracker in PHP</h3>
+                            <p class="project2-pg">A simple Book Tracker using PHP to track reading lists.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title">Skills</h2>
+                <p>Here are the skills I've learned as a current IT student.</p>
+                <ul class="skills-list">
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                    <li>C</li>
+                    <li>Javascript</li>
+                    <li>Python</li>
+                    <li>PostgreSQL</li>
+                </ul>
+                <p>And I am still learning more and more great stuffs!</p>
+            </div>
+        </section>
+        <section id="contact" class="section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title">Contact Me</h2>
+                <div class="contacts">
+                    <h3>Email:</h3>
+                    <address>
+                        <a href="mailto:charmierafols@gmail.com">charmierafols@gmail.com</a>
+                    </address>
+                </div>
+                <div class="contacts">
+                    <h3>Facebook</h3>
+                    <a href="https://www.facebook.com/chaami.mimi">Chami Rafols</a>
+                </div>
+                <div class="contacts">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/cheachy">cheachy</a>
+                </div>
+                <div class="contacts">
+                    <h3>Location:</h3>
+                    <p>Butuan City, Philippines</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">©<span id="year">2025</span> Charmie Rafols » Built with HTML & CSS</footer>
+</body>
+</html> 
